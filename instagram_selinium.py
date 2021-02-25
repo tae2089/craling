@@ -10,7 +10,7 @@ def main():
     baseUrl = 'https://www.instagram.com/explore/tags/' 
     plusUrl = input('검색할 태그를 입력하세요 : ') 
     url = baseUrl + quote_plus(plusUrl) 
-    chrome_driver = '/Users/imtaebin/Documents/Data_stduy/chromedriver'
+    chrome_driver = '/Users/imtaebin/Documents/Codes/Data_Study/semester1/chromedriver'
     driver = webdriver.Chrome(chrome_driver) 
     driver.get(url) 
     time.sleep(3) 
@@ -24,10 +24,6 @@ def main():
             imglist.append(imgUrl) 
         driver.execute_script("window.scrollTo(0, document.body.scrollHeight);") 
         time.sleep(2)
-    
-
-
-
 
 if __name__ == "__main__":
     main()

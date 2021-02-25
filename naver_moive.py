@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-import matplotlib
+
 
 def main():
     url = "https://movie.naver.com/movie/sdb/rank/rmovie.nhn"
